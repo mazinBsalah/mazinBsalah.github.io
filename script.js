@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Hacker Mode toggled!"); // Debugging message
         });
     } else {
-        console.error("Button not found!"); // Debugging error
+        console.error("Button not found!"); // Debugging error.
     }
 });
