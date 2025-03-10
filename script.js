@@ -1,11 +1,36 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const button = document.getElementById("hackerModeToggle");
-    if (button) {
-        button.addEventListener("click", function() {
+    const hackerButton = document.getElementById("hackerModeToggle");
+    const resistanceButton = document.getElementById("resistanceModeToggle");
+
+    // Apply saved mode from localStorage when page loads
+    const savedMode = localStorage.getItem("theme-mode");
+    if (savedMode) {
+        document.body.classList.add(savedMode);
+    }
+
+    function activateMode(mode) {
+        document.body.classList.remove("hacker-mode", "resistance-mode");
+        document.body.classList.add(mode);
+        localStorage.setItem("theme-mode", mode);
+    }
+
+    if (hackerButton) {
+        hackerButton.addEventListener("click", function() {
             document.body.classList.toggle("hacker-mode");
-            console.log("Hacker Mode toggled!"); // Debugging message
+            activateMode("hacker-mode");
+            console.log("Hacker Mode toggled!");
         });
     } else {
-        console.error("Button not found!"); // Debugging error.
+        console.error("Hacker Mode button not found!");
+    }
+
+    if (resistanceButton) {
+        resistanceButton.addEventListener("click", function() {
+            document.body.classList.toggle("resistance-mode");
+            activateMode("resistance-mode");
+            console.log("Resistance Mode toggled!");
+        });
+    } else {
+        console.error("Resistance Mode button not found!");
     }
 });
