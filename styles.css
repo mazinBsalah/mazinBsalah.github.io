@@ -53,3 +53,31 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+/* Hacker Mode Styles */
+.hacker-mode {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+
+.hacker-mode header {
+    background: #003300;
+}
+
+.hacker-mode section {
+    background: #001a00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.hacker-mode nav ul li a {
+    color: #00ff00;
+}
+
+.hacker-mode button {
+    background: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    cursor: pointer;
+}
