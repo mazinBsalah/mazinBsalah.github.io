@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Check localStorage and apply saved mode
     if (localStorage.getItem("theme-mode") === "hacker-mode") {
         document.body.classList.add("hacker-mode");
+        hackerButton.textContent = "Deactivate Hacker Mode"; // Set button text
         console.log("Hacker Mode reapplied from localStorage");
     }
 
@@ -11,10 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (document.body.classList.contains("hacker-mode")) {
             document.body.classList.remove("hacker-mode");
             localStorage.setItem("theme-mode", "normal-mode"); // Store normal mode
+            hackerButton.textContent = "Activate Hacker Mode"; // Change button text back
             console.log("Hacker Mode deactivated!");
         } else {
             document.body.classList.add("hacker-mode");
             localStorage.setItem("theme-mode", "hacker-mode"); // Save mode
+            hackerButton.textContent = "Deactivate Hacker Mode"; // Update button text
             console.log("Hacker Mode activated and stored in localStorage!");
         }
     }
