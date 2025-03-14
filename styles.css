@@ -70,10 +70,17 @@ footer {
     box-shadow: 0 0 10px #00ff00;
 }
 
+/* Brighter Titles in Hacker Mode */
+.hacker-mode h2 {
+    color: #33ff33; /* Slightly brighter green for better visibility */
+}
+
+/* Hacker Mode Navigation Links */
 .hacker-mode nav ul li a {
     color: #00ff00;
 }
 
+/* Hacker Mode Button */
 .hacker-mode button {
     background: black;
     color: #00ff00;
