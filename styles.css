@@ -70,20 +70,10 @@ footer {
     box-shadow: 0 0 10px #00ff00;
 }
 
-/* Fixes text visibility in Hacker Mode */
-.hacker-mode h2, 
-.hacker-mode p, 
-.hacker-mode a {
-    color: #00ff00 !important;
-}
-
-/* Ensures links remain readable */
 .hacker-mode nav ul li a {
     color: #00ff00;
-    text-decoration: underline;
 }
 
-/* Buttons in Hacker Mode */
 .hacker-mode button {
     background: black;
     color: #00ff00;
