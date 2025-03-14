@@ -44,7 +44,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Centered Content Box */
+/* Centered Content Box for All Pages */
 .content {
     background: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@ footer {
     background: #003300;
 }
 
-.hacker-mode section {
+.hacker-mode .content {
     background: #001a00;
     box-shadow: 0 0 10px #00ff00;
 }
