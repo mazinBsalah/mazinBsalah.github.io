@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Hacker Mode Styles */
+.hacker-mode {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+
+.hacker-mode header {
+    background: #003300;
+}
+
+.hacker-mode section {
+    background: #001a00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Brighter Titles in Hacker Mode */
+.hacker-mode h2 {
+    color: #333846; /* Slightly brighter green for better visibility */
+}
+
+/* Hacker Mode Navigation Links */
+.hacker-mode nav ul li a {
+    color: #00ff00;
+}
+
+/* Hacker Mode Button */
+.hacker-mode button {
+    background: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.contact-buttons a:hover {
+    background: #1a73e8;
+}
